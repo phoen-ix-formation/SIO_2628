@@ -1,0 +1,14 @@
+p {
+    color: #ff0000;
+    background-color: #000000;
+    border: 20px solid #f6f32a;
+    border-radius: 15px;
+    height: 100px;
+    width: 400px;
+    font-size: 25px;
+}
+
+p:hover {
+    color: #000000;
+    background-color: #ff0000;
+}
