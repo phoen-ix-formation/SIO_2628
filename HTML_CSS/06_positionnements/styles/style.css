@@ -8,6 +8,12 @@
     padding: 0;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
 /* Styles communs à tous les exemples et exercices */
 .exercice {
     width: 800px;
