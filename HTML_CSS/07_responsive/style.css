@@ -1,0 +1,35 @@
+/* ===== Base commune (ne pas modifier) ===== */
+* {
+    box-sizing: border-box; /* bordures et marges intérieures comprises dans la largeur */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.exercice {
+    border: 1px solid #999;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.label {
+    margin: 6px 0 2px;
+    font-family: monospace;
+    color: #2e75b6;
+    font-weight: bold;
+}
+
+.bloc {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.one    { background-color: red;    color: white; }
+.two    { background-color: green;  color: white; }
+.three  { background-color: blue;   color: white; }
+.four   { background-color: yellow; }
+.five   { background-color: violet; }
+.six    { background-color: orange; }
