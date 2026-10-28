@@ -33,3 +33,36 @@ body {
 .four   { background-color: yellow; }
 .five   { background-color: violet; }
 .six    { background-color: orange; }
+
+/* Partie B */
+#exemple_media {
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 600px) {
+    #exemple_media {
+        background-color: red;
+        font-size: 1em;
+    }
+}
+
+/* Exercice 2 */
+#ex2 p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Par défaut, les trois messages sont masqués */
+#ex2 .msg-mobile,
+#ex2 .msg-tablette,
+#ex2 .msg-ordi {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #ex2 .msg-mobile {
+        background-color: #f5c6aa;
+        display: block;
+    }
+}
+
