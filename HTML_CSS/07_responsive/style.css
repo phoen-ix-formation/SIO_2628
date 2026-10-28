@@ -66,3 +66,16 @@ body {
     }
 }
 
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    #ex2 .msg-tablette {
+        background-color: #aaf5c6;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #ex2 .msg-ordi {
+        background-color: #aad4f5;
+        display: block;
+    }
+}
