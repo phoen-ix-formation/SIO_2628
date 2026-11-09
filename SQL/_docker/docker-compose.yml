@@ -1,0 +1,40 @@
+# Environnement du module SQL : MariaDB + phpMyAdmin
+# BTS SIO · U5.4 · La Savonnerie du Sundgau
+
+services:
+  db:
+    image: mariadb:11.8                  # version LTS figée, jamais « latest »
+    container_name: sql-mariadb
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+      MARIADB_DATABASE: ${MARIADB_DATABASE}
+      MARIADB_USER: ${MARIADB_USER}
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+    volumes:
+      - donnees_mariadb:/var/lib/mysql   # les données survivent au conteneur
+      - ./initdb:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "127.0.0.1:3306:3306"            # accessible depuis ce poste uniquement
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      start_period: 20s
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  phpmyadmin:
+    image: phpmyadmin:5.2
+    container_name: sql-phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: db                       # nom du service MariaDB sur le réseau interne
+      UPLOAD_LIMIT: 64M
+    ports:
+      - "127.0.0.1:8080:80"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  donnees_mariadb:
