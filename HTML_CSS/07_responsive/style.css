@@ -196,3 +196,35 @@ body {
     /* À compléter : 1.2 fois la taille de la racine */
     font-size: 1.2rem;
 }
+
+
+.article-rem {
+    border: 1px solid #999;
+    padding: 1rem;
+}
+
+.article-rem h3 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem;
+}
+
+.article-rem p {
+    font-size: 1rem;
+    margin: 0 0 1rem;
+}
+
+.bouton-rem {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #2e75b6;
+    color: white;
+}
+
+/* À compléter */
+@media screen and (min-width: 992px) {
+
+    html {
+        font-size: 125%;
+    }
+}
