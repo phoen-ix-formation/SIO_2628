@@ -232,3 +232,29 @@ body {
 #ex10 h3 {
     font-size: clamp(1.5rem, 5vw, 3rem);
 }
+
+/* Exo 11 - Paysage */
+@media (orientation: landscape) {
+
+    #ex11 .msg-portrait {
+        display: none;
+    }
+
+    #ex11 .bloc {
+        width: 48%;
+        display: inline-block;
+    }
+}
+
+/* Exo 11 - Portrait */
+@media (orientation: portrait) {
+
+    #ex11 .msg-paysage {
+        display: none;
+    }
+
+    #ex11 .bloc {
+        width: 100%;
+        display: block;
+    }
+}
