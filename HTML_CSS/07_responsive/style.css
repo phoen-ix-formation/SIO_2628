@@ -228,3 +228,7 @@ body {
         font-size: 125%;
     }
 }
+
+#ex10 h3 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
