@@ -258,3 +258,28 @@ body {
         display: block;
     }
 }
+
+
+.carte-theme {
+    background-color: #ffffff;
+    color: #222222;
+    border: 1px solid #cccccc;
+    padding: 15px;
+}
+
+.carte-theme h3 { margin-top: 0; }
+.carte-theme a { color: #2e75b6; } 
+
+/* puis à compléter */
+@media (prefers-color-scheme: dark) {
+
+    .carte-theme {
+        background-color: #222222;
+        color: #ffffff;
+        border: 1px solid #222222;
+    }
+
+    .carte-theme a {
+        color: #7fb8ff;
+    }
+}
