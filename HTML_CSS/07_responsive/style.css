@@ -174,3 +174,25 @@ body {
         display: none;
     }
 }
+
+.colonne {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+
+.niveau {
+    border-left: 3px solid #2e75b6;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+#ex8_em .niveau {
+    /* À compléter : 1.2 fois la taille du parent */
+    font-size: 1.2em;
+}
+
+#ex8_rem .niveau {
+    /* À compléter : 1.2 fois la taille de la racine */
+    font-size: 1.2rem;
+}
