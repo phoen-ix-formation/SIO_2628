@@ -86,3 +86,18 @@ body {
         display: none;
     }
 }
+
+/* Mobile first : à compléter */
+#ex4 .bloc {
+    display: block;
+    width: 100%;
+}
+
+/* Point de rupture "ordinateur" : à compléter */
+@media screen and (min-width: 992px) {
+
+    #ex4 .bloc {
+        display: inline-block;
+        width: 33%;
+    }
+}
