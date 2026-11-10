@@ -101,3 +101,28 @@ body {
         width: 33%;
     }
 }
+
+
+#ex5 .bloc {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+    #ex5 .bloc {
+        display: inline-block;
+        width: 49%;
+    }
+}
+
+/* Point de rupture "ordinateur" : à compléter */
+@media screen and (min-width: 992px) {
+
+    #ex5 .bloc {
+        display: inline-block;
+        width: 33%;
+    }
+}
+
+
